@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <script src="assets/app.js" async></script>
+    <script src="assets/settings.json" async></script>
+    <script src="assets/funciones.js" async></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    
+    <title>Camisetas| </title>
+</head>
+<body >
+    <!-- #region MENÚ DROP-->
+    <nav class="nav">
+        <div class="nav__contenedor">
+                <h1 class="nav__title">Punto_Modas</h1>
+            <a href="#menu" class="nav__menu">
+                <img src="assets/icon/menu-abierto.png" class="nav__icon">
+            </a>
+            <a href="#" class="nav__menu nav__menu--secundario">
+                <img src="assets/icon/cerca.png" class="nav__icon ">
+            </a>
+            <ul class="dropdown" id="menu">
+                <!-- INCIO -->
+                <li class="dropdown__lista">
+                    <a href="index.html" class="dropdown__link">
+                        <img src="assets/icon/inicio.png" class="dropdown__icon">
+                        <span class="dropdown__span">Inicio</span>
+                    </a>
+                </li>
+                <!-- #region HOMBRES-->
+                <li class="dropdown__lista">
+                    <a href="#" class="dropdown__link">
+                        <img src="assets/icon/ropa-de-caballero.png" class="dropdown__icon">
+                        <span class="dropdown__span">Hombres</span>
+                        <img src="assets/icon/abajo-chevron.png" class="dropdown__arrow">
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+                    <div class="dropdown__contenido">
+                        <ul class="dropdown__ul">
+
+                            <li class="dropdown__li">
+                                <a href="camisetas.html" class="dropdown__anchor">Remeras</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <li class="dropdown__li">
+                                    <a href="jeans.html" class="dropdown__anchor">Jeans</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a href="abrigos.html" class="dropdown__anchor">Abrigos</a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- #endregion -->
+                <!-- #region CALZADOS PARA MUJERES-->
+                <li class="dropdown__lista">
+                    <a href="#" class="dropdown__link">
+                        <img src="assets/icon/ropa de mujer.png" class="dropdown__icon">
+                        <span class="dropdown__span">Mujeres</span>
+                        <img src="assets/icon/abajo-chevron.png" class="dropdown__arrow">
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+                    <div class="dropdown__contenido">
+                        <ul class="dropdown__ul">
+
+                            <li class="dropdown__li">
+                                <a href="mCasuales.html" class="dropdown__anchor">Casuales</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <li class="dropdown__li">
+                                    <a href="mPantalones.html" class="dropdown__anchor">Pantalones</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a href="mconjuntos.html" class="dropdown__anchor">Conjuntos</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a href="mAbrigos.html" class="dropdown__anchor">Invierno</a>
+                                </li>
+                            </ul>
+                            
+                    </div>
+                </li>
+                <!-- #endregion -->
+                <!-- #region NIÑOS-->
+                <li class="dropdown__lista">
+                    <a href="niños.html" class="dropdown__link">
+                        <img src="assets/icon/ropa criatura.png" class="dropdown__icon">
+                        <span class="dropdown__span">Niños</span>
+                    </a>
+                </li>
+                <!-- #endregion -->
+                <!-- ABOUT con DROPDOWN -->
+                <li class="dropdown__lista">
+                    <a href="#" class="dropdown__link">
+                        <img src="assets/icon/about.png" class="dropdown__icon">
+                        <span class="dropdown__span">About</span>
+                        <img src="assets/icon/abajo-chevron.png" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+                    <div class="dropdown__contenido">
+                        <ul class="dropdown__ul">
+
+                            <li class="dropdown__li">
+                                <a href="QuienesSomos.html" class="dropdown__anchor">Quiénes somos?</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="contactar.html" class="dropdown__anchor">Cómo contactarnos?</a>
+                            </li>                        
+                            <!-- <li class="dropdown__li">
+                                <a href="sugerencias.html" class="dropdown__anchor">Déjanos tu sugerencia</a>
+                            </li>                         -->
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown__lista">
+                    <a href="#" class="dropdown__link">
+                        <img src="assets/icon/ayudando.png" class="dropdown__icon">
+                        <span class="dropdown__span">Ayuda</span>
+                    </a>
+                </li>
+                <li class="dropdown__lista">
+                    <a href="#" class="dropdown__link">
+                        <img src="assets/icon/brillo-y-contraste.png" class="dropdown__icon">
+                        <span class="dropdown__span" id="modoOscuroBtn">Activar Modo Oscuro</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- #endregion -->
+    <!-- #region CONTENEDOR-->
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <!--1-->
+            <div class="item">
+                <span class="titulo-item">DOKEVY</span>
+                <span class="sub_titulo-item">Talle: 36 al 48</span>
+                <img src="assets/img/Hombres/Remeras/Dokevy1.jpeg" alt="" class="img-item">
+                <span class="precio-item">$95.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <!--2-->
+            <div class="item">
+                <span class="titulo-item">DOKEVY</span>
+                <span class="sub_titulo-item">Talle: 36 al 48</span>
+                <img src="assets/img/Hombres/Remeras/Dokevi2.jpeg" alt="" class="img-item">
+                <span class="precio-item">$95.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <!--3-->
+            <div class="item">
+                <span class="titulo-item">Remera Básica</span>
+                <span class="sub_titulo-item">Slim Light R.I19 <br> Talle: P al G</span>
+                <img src="assets/img/Hombres/Remeras/01.jpg" alt="" class="img-item">
+                <span class="precio-item">$65.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <!--4-->
+            <div class="item">
+                <span class="titulo-item">Remera con diseño</span>
+                <span class="sub_titulo-item">Slim Light R.I19 <br> Talle: P al G</span>
+                <img src="assets/img/Hombres/Remeras/02.jpg" alt="" class="img-item">
+                <span class="precio-item">$65.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <!--5-->
+            <div class="item">
+                <span class="titulo-item">Remera Básica</span>
+                <span class="sub_titulo-item"><br> Talle: P al G</span>
+                <img src="assets/img/Hombres/Remeras/04.jpg" alt="" class="img-item">
+                <span class="precio-item">$65.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <!--6-->
+            <div class="item">
+                <span class="titulo-item">Remera Blanca</span>
+                <span class="sub_titulo-item">Diseño <br> Talle: P al G</span>
+                <img src="assets/img/Hombres/Remeras/03.jpg" alt="" class="img-item">
+                <span class="precio-item">$65.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <!--7-->
+            <div class="item">
+                <span class="titulo-item">Remera</span>
+                <span class="sub_titulo-item">Tela súper liviano <br> Talle: P al G</span>
+                <img src="assets/img/Hombres/Remeras/05.jpg" alt="" class="img-item">
+                <span class="precio-item">$65.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <!--8-->
+            <div class="item">
+                <span class="titulo-item">Ultra liviano</span>
+                <span class="sub_titulo-item"> <br> Talle: P al G</span>
+                <img src="assets/img/Hombres/Remeras/06.jpg" alt="" class="img-item">
+                <span class="precio-item">$65.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <!--9-->
+            <div class="item">
+                <span class="titulo-item">Remera </span>
+                <span class="sub_titulo-item">Color Único <br> Talle: P al G</span>
+                <img src="assets/img/Hombres/Remeras/07.jpg" alt="" class="img-item">
+                <span class="precio-item">$65.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <!--10-->
+            <div class="item">
+                <span class="titulo-item">T-Shirt R.I19</span>
+                <span class="sub_titulo-item">Ultra liviano<br>Talle: P al GG <br> 6 Colores Disponibles</span>
+                <img src="assets/img/Hombres/Remeras/J VARIADOS.jpeg" alt="" class="img-item">
+                <span class="precio-item">$82.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+           
+        </div>
+        <!-- #region Carritos de compra-->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2 class="title_Carrito">Punto_Modas</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+            <script src="container.js" async></script>
+        </div>
+        <!-- #endregion -->
+    </section>
+    <!-- #endregion -->
+    <!-- #region FOOTER-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2 class="h2__footer" >Punto_Modas</h2>
+                <figure>
+                    <a href="https://www.google.com/maps?q=-25.029815,-56.0457433&z=17&hl=es" target="_blank">
+                        <img src="assets/img/Para Footer.jpg" alt="Logo de Punto_Modas">
+                    </a>
+                </figure>
+            </div>
+        
+            <div class="box">
+                <h2 class="h2__footer2">Siguenos</h2>
+                <div class="red-social">
+                    <a target="_blank" rel="noopener noreferrer" href="" class="fa fa-facebook"></a>
+                    <a target="_blank" rel="noopener noreferrer" href=""class="fa fa-instagram"></a>
+                    <a target="_blank" rel="noopener noreferrer" href=""class="fa fa-twitter"></a>
+                    <a target="_blank" rel="noopener noreferrer" href="" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Punto_Modas</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <!-- #endregion -->
+</body>
+</html>
